@@ -38,6 +38,6 @@ public static class RandomNumbers
 		for (long i = 0; i < end; i++)
 			rng.Next();
 		stop_watch.Stop();
-		Console.WriteLine("{0}.Next() ({1}) {2} ms\n", name, n, stop_watch.Elapsed.Milliseconds);
+		Console.WriteLine("{0}.Next() ({1}) {2:0} ms\n", name, n, stop_watch.Elapsed.TotalMilliseconds);
 	}
 }
